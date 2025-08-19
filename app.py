@@ -42,4 +42,4 @@ st.metric("Energy Savings (₹ lakh)", f"{energy_savings:.1f}")
 st.metric("Downtime Savings (₹ lakh)", f"{downtime_savings:.1f}")
 st.metric("Consumables Savings (₹ lakh)", f"{consumables_savings:.1f}")
 st.subheader("💰 Total Annual Savings")
-st.metric("Total Savings (₹ lakh)", f"{total_saving_
+st.metric("Total Savings (₹ lakh)", f"{total_savings:.1f}")
