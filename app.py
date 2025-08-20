@@ -18,11 +18,11 @@ with left_pane:
     with col1:
         production = st.number_input("Production (MT/day)", value=50)
         energy_per_ton = st.number_input("Avg. Energy Consumption (kWh/Ton)", value=1300)
-        energy_tariff = st.number_input("Energy Tariff (₹/kWh)             .", value=6.5)
+        energy_tariff = st.number_input("Energy Tariff (₹/kWh)", value=6.5)
         yarn_price = st.number_input("Yarn Price (₹/kg)", value=140)
     with col2:
         net_profit = st.number_input("Net Profit (₹/kg)", value=7)
-        downgrade_loss = st.number_input("Downgrade Loss (₹/kg)", value=35)
+        downgrade_loss = st.number_input("Downgrade Loss (₹/kg)           ", value=35)
         avg_doff_weight = st.number_input("Avg. Doff Weight (kg)", value=5)
         paper_tube_price = st.number_input("Avg. Paper-tube price (₹)", value=8)
 
