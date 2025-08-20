@@ -22,7 +22,7 @@ with left_pane:
         yarn_price = st.number_input("Yarn Price (₹/kg)", value=140)
     with col2:
         net_profit = st.number_input("Net Profit (₹/kg)", value=7)
-        downgrade_loss = st.number_input("Downgrade Loss (₹/kg)           ", value=35)
+        downgrade_loss = st.number_input("Downgrade Loss             (₹/kg)", value=35)
         avg_doff_weight = st.number_input("Avg. Doff Weight (kg)", value=5)
         paper_tube_price = st.number_input("Avg. Paper-tube price (₹)", value=8)
 
