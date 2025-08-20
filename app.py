@@ -84,7 +84,7 @@ with right_pane:
         increasing={"marker": {"color": "darkgrey"}},
         decreasing={"marker": {"color": "darkgrey"}},
         totals={"marker": {"color": "darkorange"}},
-        textfont={"color": "black", "size": 13, "family": "Arial", "weight": "bold"}
+        textfont={"color": "white", "size": 13, "family": "Arial", "weight": "bold"}
     ))
 
     fig.update_layout(
