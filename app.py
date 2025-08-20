@@ -91,8 +91,8 @@ with right_pane:
         title="Waterfall Chart of Savings",
         waterfallgap=0.3,
         autosize=False,
-        width=1000,
-        height=500,
+        width=700,
+        height=300,
         margin=dict(l=20, r=20, t=40, b=20)
     )
 
