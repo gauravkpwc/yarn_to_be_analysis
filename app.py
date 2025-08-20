@@ -17,7 +17,7 @@ with left_pane:
     col1, col2 = st.columns(2)
     with col1:
         production = st.number_input("Production (MT/day)", value=50)
-        energy_per_ton = st.number_input("Avg. Energy Cons. (kWh/Ton)", value=1300)
+        energy_per_ton = st.number_input("Energy Cons. (kWh/Ton)", value=1300)
         energy_tariff = st.number_input("Energy Tariff (₹/kWh)", value=6.5)
         yarn_price = st.number_input("Yarn Price (₹/kg)", value=140)
     with col2:
@@ -29,7 +29,7 @@ with left_pane:
     st.markdown("---")
     col3, col4 = st.columns(2)
     with col3:
-        energy_reduction_pct = st.number_input("Energy Consumption Reduction %", value=1.0) / 100
+        energy_reduction_pct = st.number_input("Energy Reduction %", value=1.0) / 100
         downtime_reduction_pct = st.number_input("Downtime Reduction %", value=1.0) / 100
     with col4:
         downgrade_reduction_pct = st.number_input("Downgrade Reduction %", value=0.5) / 100
