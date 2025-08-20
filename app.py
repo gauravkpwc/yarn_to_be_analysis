@@ -90,10 +90,10 @@ with right_pane:
     fig.update_layout(
         title="Waterfall Chart of Savings",
         waterfallgap=0.3,
-        autosize=False,
-        width=700,
+        autosize=True,
+        width=500,
         height=400,
-        margin=dict(l=20, r=20, t=20, b=20)
+        margin=dict(l=20, r=20, t=40, b=20)
     )
 
     st.plotly_chart(fig, use_container_width=True)
