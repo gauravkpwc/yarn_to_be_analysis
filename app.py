@@ -90,7 +90,7 @@ with right_pane:
     fig.update_layout(
         title="Waterfall Chart of Savings",
         waterfallgap=0.3,
-        autosize=True,
+        autosize=False,
         width=500,
         height=400,
         margin=dict(l=20, r=20, t=40, b=20)
