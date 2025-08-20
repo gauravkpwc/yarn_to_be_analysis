@@ -8,8 +8,8 @@ st.set_page_config(page_title="Annual Savings Dashboard", layout="wide")
 # Title
 st.title("Annual Savings Dashboard")
 
-# Two side-by-side panes
-left_pane, right_pane = st.columns([1, 0.2, 2])
+# Three columns: left pane, spacer, right pane
+left_pane, spacer, right_pane = st.columns([1, 0.2, 2])
 
 # Left Pane: Inputs
 with left_pane:
@@ -46,6 +46,7 @@ with right_pane:
     downtime_savings = production * 365 * downtime_reduction_pct * net_profit * 1000 / 100000
     consumables_savings = production * 1000 * 365 * even_improvement_pct * paper_tube_price / avg_doff_weight / 100000
     total_savings = downgrade_savings + energy_savings + downtime_savings + consumables_savings
+
     # Display metrics
     colA, colB, colC = st.columns(3)
     with colA:
