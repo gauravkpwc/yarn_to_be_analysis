@@ -5,6 +5,29 @@ import plotly.graph_objects as go
 # Set wide layout
 st.set_page_config(page_title="Annual Savings Dashboard", layout="wide")
 
+# Inject custom CSS to reduce vertical spacing
+st.markdown(
+    """
+    <style>
+        .block-container {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .stNumberInput, .stMetric {
+            margin-bottom: 0.5rem;
+        }
+        .stColumn {
+            padding: 0.5rem;
+        }
+        h1, h2, h3 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Title
 st.title("Annual Savings Dashboard")
 
@@ -26,7 +49,6 @@ with left_pane:
         avg_doff_weight = st.number_input("Avg. Doff Weight (kg)", value=5)
         paper_tube_price = st.number_input("Avg. Paper-tube price (₹)", value=8)
 
-    st.markdown("---")
     col3, col4 = st.columns(2)
     with col3:
         energy_reduction_pct = st.number_input("Energy Reduction %", value=1.0) / 100
