@@ -92,8 +92,8 @@ with right_pane:
         waterfallgap=0.3,
         autosize=False,
         width=700,
-        height=300,
-        margin=dict(l=20, r=20, t=40, b=20)
+        height=400,
+        margin=dict(l=20, r=20, t=20, b=20)
     )
 
     st.plotly_chart(fig, use_container_width=True)
