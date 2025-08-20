@@ -60,7 +60,7 @@ with right_pane:
         st.metric("Total Savings (₹ lakh)", f"{total_savings:.1f}")
 
     # Waterfall Chart
-    st.subheader("📉 Savings Breakdown")
+    st.subheader("📉 Potential Annual Savings")
     fig = go.Figure(go.Waterfall(
         name="Savings",
         orientation="v",
@@ -89,7 +89,6 @@ with right_pane:
     ))
 
     fig.update_layout(
-        title="Potential Annual Savings",
         waterfallgap=0.3,
         autosize=False,
         width=500,
