@@ -9,7 +9,7 @@ st.set_page_config(page_title="Annual Savings Dashboard", layout="wide")
 st.title("Annual Savings Dashboard")
 
 # Two side-by-side panes
-left_pane, right_pane = st.columns([1, 2])
+left_pane, right_pane = st.columns([1, 0.2, 2])
 
 # Left Pane: Inputs
 with left_pane:
